@@ -18,3 +18,6 @@ class BasePage:
     def elem_invisible(self,locator):
         elem = self.wait.until(EC.invisibility_of_element(locator))
         return elem
+
+    def presence_of_all_elems(self, locator):
+        return self.wait.until(EC.presence_of_all_elements_located(locator))

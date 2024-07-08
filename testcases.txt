@@ -23,3 +23,39 @@ Test Cases-->
         Submit the search.
         Verify the term "Selenium" appears in the search results.
     Expected Result: The term "Selenium" should appear in the search results.
+
+4.Verify language change functionality.
+    Description: Ensure that changing the language on the home page updates the language of the interface.
+    Steps:
+        Open https://www.wikipedia.org.
+        Click on the "Español" link to switch the language to Spanish.
+        Verify that the page title changes to "Wikipedia, la enciclopedia libre".
+    Expected Result: The page title should be "Wikipedia, la enciclopedia libre".
+
+5.Verify the existence of the "Today's featured article" section on the main page.
+    Description: Check that the "Today's featured article" section is present on the main page.
+    Steps:
+        Open https://www.wikipedia.org.
+        Click on the "English" link to go to the English Wikipedia.
+        Verify that the "Today's featured article" section is present on the main page.
+    Expected Result: The "Today's featured article" section should be present.
+
+6.Verify search suggestions appear when typing in the search box.
+    Description: Ensure that search suggestions appear as you type in the search box.
+    Steps:
+        Open https://www.wikipedia.org.
+        Click on the "English" link to go to the English Wikipedia.
+        Enter the partial search term "Python" in the search box.
+        Verify that search suggestions appear.
+    Expected Result: Search suggestions should appear as you type.
+
+7.Verify the navigation to a specific article through search results.
+    Description: Ensure that clicking on a search result navigates to the correct article.
+    Steps:
+        Open https://www.wikipedia.org.
+        Click on the "English" link to go to the English Wikipedia.
+        Enter the search term "Python (programming language)" in the search box.
+        Submit the search.
+        Click on the search result link for "Python (programming language)".
+        Verify that the article title is "Python (programming language)".
+    Expected Result: The article title should be "Python (programming language)".
