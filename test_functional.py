@@ -30,3 +30,8 @@ class Test_functional_tests():
         base.presence_of_elem((By.XPATH,"//input[@id='searchInput']")).send_keys(constants.SEARCH_FOR)
         base.elem_clickable((By.XPATH,"//i[@data-jsl10n='search-input-button']")).click()
         assert (self.driver.title).startswith(constants.SEARCH_FOR)
+
+    def test_search_app(self):
+        base = self.get_base()
+        text_head= base.presence_of_elem((By.XPATH,"//*[@class='mw-page-title-main']")).text
+        assert text_head == constants.SEARCH_FOR
