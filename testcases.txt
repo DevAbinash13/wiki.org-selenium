@@ -1,0 +1,25 @@
+Test Cases-->
+1.Verify the Wikipedia home page title.
+    Description: Ensure the title of the Wikipedia home page is correct.
+    Steps:
+        Open https://www.wikipedia.org.
+        Verify the page title is "Wikipedia".
+    Expected Result: The page title should be "Wikipedia".
+
+2.Perform a search and check the search results page title.
+    Description: Search for a term and verify that the search results page title includes the search term.
+    Steps:
+        Open https://www.wikipedia.org.
+        Enter the search term "Selenium" in the search box.
+        Submit the search.
+        Verify the page title contains "Selenium".
+    Expected Result: The page title should contain the word "Selenium".
+
+3.Verify that a specific term appears in the search results.
+    Description: Ensure that the search term appears in the search results.
+    Steps:
+        Open https://www.wikipedia.org.
+        Enter the search term "Selenium" in the search box.
+        Submit the search.
+        Verify the term "Selenium" appears in the search results.
+    Expected Result: The term "Selenium" should appear in the search results.
