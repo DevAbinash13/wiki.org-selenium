@@ -25,3 +25,8 @@ class Test_functional_tests():
         self.driver.get(constants.URL)
         assert self.driver.title == constants.WEBSITE_NAME
 
+    def test_search(self):
+        base= self.get_base()
+        base.presence_of_elem((By.XPATH,"//input[@id='searchInput']")).send_keys(constants.SEARCH_FOR)
+        base.elem_clickable((By.XPATH,"//i[@data-jsl10n='search-input-button']")).click()
+        assert (self.driver.title).startswith(constants.SEARCH_FOR)
